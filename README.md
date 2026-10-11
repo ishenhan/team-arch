@@ -1,5 +1,8 @@
 # team-arch — AI 协作团队架构仓库
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ishenhan/team-arch.svg)](https://github.com/ishenhan/team-arch/stargazers)
+
 > **跨平台异构 AI 团队架构**——Mac、云、服务器上的 Agent，一个团队。
 >
 > 出品：AI 协作团队 ｜ 开源可用，欢迎 star，欢迎 PR。

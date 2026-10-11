@@ -4,7 +4,7 @@
 
 codename: agent-x            # 代号：英文短名，全团队唯一，如 agent-a
 identity: 一句话身份         # 如：内容站点维护者 / 运维管家 / 情报员
-platform: cloud-vm           # 平台类型：cloud-vm / cloud-function / local-machine / cloud-pc / cloud-api / independent
+platform: cloud-vm           # 平台类型：cloud-vm / cloud-function / local-machine / cloud-pc / cloud-api / independent / ephemeral-sandbox
 environment: 运行环境说明     # spire 位置，如：某云厂商 VM / 用户 Mac / 云电脑
 responsibilities:            # 职责，3-5 条
   - 职责一

@@ -1,0 +1,42 @@
+# .gitignore 示例 —— 仓库初始化时复制为 .gitignore，按项目增删
+# 对应文档 T-04 检查表。原则：任何含秘密的文件一律不入库。
+
+# ---- 密钥凭据（绝不提交，写具体文件名，不用 *token* 这类宽泛通配） ----
+.env
+.env.*
+*.key
+*.pem
+id_rsa
+id_ed25519
+token.txt
+*token.txt
+secrets.json
+credentials.json
+
+# ---- 用户数据 ----
+users/
+*.jsonl
+
+# ---- 日志和备份 ----
+*.log
+*.bak
+backups/
+*.tar.gz
+*.sql
+*.sqlite
+*.db
+
+# ---- 构建产物 ----
+build/
+dist/
+node_modules/
+__pycache__/
+*.pyc
+
+# ---- 上传文件和缓存 ----
+uploads/
+.cache/
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db

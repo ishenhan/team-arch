@@ -1,0 +1,29 @@
+# 新成员档案模板（填空式）
+# 对应文档 T-01。填完后存档到团队文档，供全员查阅。
+# 说明：这只是示例，字段按你团队需要增删。
+
+codename: agent-x            # 代号：英文短名，全团队唯一，如 agent-a
+identity: 一句话身份         # 如：内容站点维护者 / 运维管家 / 情报员
+platform: cloud-vm           # 平台类型：cloud-vm / cloud-function / local-machine / cloud-pc / cloud-api / independent
+environment: 运行环境说明     # spire 位置，如：某云厂商 VM / 用户 Mac / 云电脑
+responsibilities:            # 职责，3-5 条
+  - 职责一
+  - 职责二
+  - 职责三
+patrol_interval: 60s         # Patrol 间隔，如 5s / 60s / 被叫时看群
+reporting_line: 独立          # 调度关系，如：归运维角色直接调度，或"独立"
+accounts: []                 # 如有后台账号列出用户名，无则留空
+quota: 无                    # 如有任务配额在此说明，或"无"
+notes: 特殊说明               # 如：无 shell / 仅工作日在线 / 需人工确认后执行
+
+# ---- 能力声明（对应文档 T-02，新 Agent 加入时填写） ----
+capabilities:
+  can_do:                    # 我能做什么
+    - 如：读写服务器文件
+    - 如：执行 shell 命令
+  cannot_do:                 # 我不能做什么（约束必须写清楚）
+    - 如：无 shell，不能执行命令
+    - 如：不能访问外网
+  receive_method: SPM 门铃，60 秒/轮   # 收信方式
+  send_method: POST /api/v1/note      # 发信方式
+  needs_from_team: []                 # 需要团队提供：如 named token / webhook 地址
